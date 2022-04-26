@@ -5,27 +5,31 @@ module.exports = {
   content: ["./src/**/*.{html,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "background-pattern": "url('/src/assets/overlay.png'), linear-gradient(15deg, #DA3838, #18182f)"
+      },
       colors: {
         ...colors,
         "mirage": {
-          100: "#04041b",
-          200: "#0e0e25",
-          300: "#13132a",
-          400: "#18182f",
-          500: "#28283f",
-          600: "#494960"
+          100: "#494960",
+          200: "#28283f",
+          300: "#18182f",
+          400: "#13132a",
+          500: "#0e0e25",
+          600: "#04041b",
         },
         "cinnabar": {
-          100: "#210606",
-          200: "#520f0f",
-          300: "#841919",
-          400: "#DA3838",
-          500: "#EC9999",
-          600: "#F5CACA"
+          100: "#F5CACA",
+          200: "#EC9999",
+          300: "#DA3838",
+          400: "#841919",
+          500: "#520f0f",
+          600: "#210606",
         }
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sourceSansPro: "Source Sans Pro"
       }
     },
   },
