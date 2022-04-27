@@ -8,8 +8,9 @@
 
 .alt {
   position: fixed;
-  width: 100vw;
+  max-width: 64rem;
+  width: 95vw;
   top: 0;
-  left: 0;
+  left: max(2.5vw, calc((100vw - 64rem) / 2));
   background-color: hsla(240, 4%, 13%, 0.95);
 }

@@ -52,7 +52,7 @@ export default function App() {
           currentNavActive = "About Us";
         } else if(screenMiddlePosition > devProcessScrollLocation && screenMiddlePosition < techUsedScrollLocation) {
           currentNavActive = "Development Process";
-        } else if(screenMiddlePosition > techUsedScrollLocation && screenMiddlePosition < contactScrollLocation) {
+        } else if(screenMiddlePosition > techUsedScrollLocation && screenMiddlePosition < contactScrollLocation && (window.innerHeight + window.scrollY) < contactScrollLocation) {
           currentNavActive = "Tech Used";
         } else if((window.innerHeight + window.scrollY) >= contactScrollLocation) {
           currentNavActive = "Contact Us";
@@ -75,7 +75,7 @@ export default function App() {
   const handleNightMode = () => {
     if(nightModeActive) {
       setPrimaryTextColor("text-neutral-700");
-      setPrimaryBGColor("bg-neutral-300");
+      setPrimaryBGColor("bg-neutral-200");
       setRingColor("ring-violet-300");
       setHRColor("bg-neutral-400")
     } else {
@@ -84,7 +84,6 @@ export default function App() {
       setRingColor("ring-mirage-200");
       setHRColor("bg-neutral-800")
     }
-
     setNightModeActive(!nightModeActive);
   }
   

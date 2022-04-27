@@ -6,7 +6,7 @@ const TechUsed = (props: {hrColor: string}) => {
     <article id="techUsed" className="flex flex-col items-center text-center my-8">
       <CodeIcon />
       <h1 className="text-2xl m-4">Technology We Use</h1>
-      <div className="my-8 max-w-xl">
+      <div className="my-8 max-w-xl px-8">
         <TechnologyLi item="HTML5" description="HTML5 is the backbone of every website. It is used for organizing portions of the website, and for importing images, fonts etc."/>
         <TechnologyLi item="TailwindCSS" description="TailwindCSS is a framework for CSS3 that allows for faster delivery of styling, resulting in an overall faster development process and a product being shipped to the end-user faster as well."/>
         <TechnologyLi item="TypeScript" description="TypeScript is JavaScript, but with declarative types. It helps to eliminate bugs right from the start which results in a properly working codebase first try."/>

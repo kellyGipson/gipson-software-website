@@ -5,9 +5,9 @@ const DevProcess = (props: {hrColor: string}) => {
     <article id="devProcess" className="flex flex-col justify-center items-center mx-8">
       <h1 className="text-2xl m-8"><span className="text-cinnabar-300 font-bold">AGILE</span> Development Process</h1>
       <img src={require("../assets/1000w_agile_image_transparent.webp")} alt="AGILE" className="w-96"/>
-      <ul className="list-decimal text-left max-w-xl my-16">
+      <ul className="list-decimal text-left max-w-xl py-16">
         <li className="text-cinnabar-300 font-bold">Requirements</li>
-        <p>During the requirements phase, we will collect images, text that the client would like on the page, as well as discuss other features the client would like to include.</p>
+        <p>During the requirements phase, we will collect images, and text that the client would like on the page, as well as discuss designs and functional features the client would like to include.</p>
         <li className="text-orange-400 font-bold">Design</li>
         <p>In the design phase, the required items will be taken into account, and added to a preview image to lay out the structure that the website will contain. Designs are then sent to the client for sign off, and we move into the next phase.</p>
         <li className="text-yellow-400 font-bold">Development</li>
