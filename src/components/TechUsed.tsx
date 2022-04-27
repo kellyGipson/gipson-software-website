@@ -1,7 +1,7 @@
 import CodeIcon from "../assets/CodeIcon"
 import TechnologyLi from "./TechnologyLi"
 
-const TechUsed = () => {
+const TechUsed = (props: {hrColor: string}) => {
   return (
     <article id="techUsed" className="flex flex-col items-center text-center my-8">
       <CodeIcon />
